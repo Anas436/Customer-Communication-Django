@@ -5,7 +5,40 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
+    """
+    This is a Django migration file that creates two models:
+    - Customer: Represents a customer with basic information.
+    - Interaction: Represents interactions with customers via different channels.
 
+    The `Customer` model has the following fields:
+    - id: Auto-generated primary key for each customer.
+    - name: CharField for storing the name of the customer (max length: 100).
+    - email: EmailField for storing the email address of the customer (max length: 100).
+    - phone: CharField for storing the phone number of the customer (max length: 20).
+    - address: CharField for storing the address of the customer (max length: 200).
+
+    The `Interaction` model has the following fields:
+    - id: BigAutoField for auto-generated primary key with large integer values.
+    - channel: CharField for storing the communication channel used (choices: phone, sms, email, letter).
+    - direction: CharField for storing the direction of interaction (choices: inbound, outbound).
+    - interaction_date: DateField for storing the date of the interaction (auto_now_add=True).
+    - summary: TextField for storing a summary or description of the interaction.
+    - customer: ForeignKey to the Customer model, establishing a one-to-many relationship.
+      This means each Interaction is associated with a single Customer.
+
+    Dependencies:
+    This migration does not have any dependencies.
+
+    Operations:
+    - CreateModel: Used to create the Customer and Interaction models with their respective fields.
+      Both models are created with their necessary fields and relationships.
+      ForeignKey is used in the Interaction model to establish a relationship with Customer.
+
+    Note:
+    - Auto-generated primary keys are used for both Customer and Interaction models.
+    - The Interaction model records various channels and directions of interactions with customers.
+    - This migration sets up the initial database schema for managing customer data and their interactions.
+    """
     initial = True
 
     dependencies = [
