@@ -26,12 +26,13 @@ SECRET_KEY = 'django-insecure-mxj20imb1j!8hz2!kqt*qh5^=y3q3^hyknmj**bpi9v2vuhr!p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# Allowed hosts for development - change as needed for production
 ALLOWED_HOSTS = ["*"]
 
+# CSRF Trusted Origins
 CSRF_TRUSTED_ORIGINS = ['https://*.cognitiveclass.ai']
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -39,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'customer360'
+    'customer360'  # Add your custom app here
 ]
 
 MIDDLEWARE = [
@@ -83,7 +84,6 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
@@ -102,7 +102,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
@@ -114,17 +113,16 @@ USE_I18N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
+# Static files directory configuration
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR,"static/"),
+    os.path.join(BASE_DIR, "static/"),
 )
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
