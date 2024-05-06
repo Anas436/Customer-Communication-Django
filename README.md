@@ -1,4 +1,4 @@
-# Django Application Developement Practice
+# Customer-Communication-Django
 
 Customer360 is a Django web application for managing customer information and interactions. It allows users to create new customers, record interactions, and view summaries of recent interactions.
 
