@@ -25,6 +25,15 @@ Customer360 is a Django web application for managing customer information and in
    python manage.py runserver
    ```
 6. Access the application at http://localhost:8000/ and the admin panel at http://localhost:8000/admin/.
+
+
+## Demo
+
+![](https://github.com/Anas436/Customer-Communication-Django/blob/main/photos/1.launch.png)
+![](https://github.com/Anas436/Customer-Communication-Django/blob/main/photos/2.add-new-customer.png)
+![](https://github.com/Anas436/Customer-Communication-Django/blob/main/photos/3.landing-page.png)
+![](https://github.com/Anas436/Customer-Communication-Django/blob/main/photos/4.interaction-details.png)
+![](https://github.com/Anas436/Customer-Communication-Django/blob/main/photos/5.summary.png)
    
 ## Usage
 
