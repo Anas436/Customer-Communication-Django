@@ -30,9 +30,17 @@ Customer360 is a Django web application for managing customer information and in
 ## Demo
 
 ![](https://github.com/Anas436/Customer-Communication-Django/blob/main/photos/1.launch.png)
+<hr>
+
 ![](https://github.com/Anas436/Customer-Communication-Django/blob/main/photos/2.add-new-customer.png)
+<hr>
+
 ![](https://github.com/Anas436/Customer-Communication-Django/blob/main/photos/3.landing-page.png)
+<hr>
+
 ![](https://github.com/Anas436/Customer-Communication-Django/blob/main/photos/4.interaction-details.png)
+<hr>
+
 ![](https://github.com/Anas436/Customer-Communication-Django/blob/main/photos/5.summary.png)
    
 ## Usage
